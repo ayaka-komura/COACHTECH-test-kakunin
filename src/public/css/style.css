@@ -1,0 +1,143 @@
+/* 共通設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f5f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Header スタイル */
+header {
+    width: 1512px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8B7969;
+    border-top: 1px solid #E0DFDE;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    margin: 0 auto;
+    /* 中央寄せのため */
+}
+
+header h1 {
+    color: #FFFFFF;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    font-weight: normal;
+    color: #3d3d3d;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #6b5b4a;
+}
+
+/* フォームのスタイル */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group label {
+    width: 30%;
+    font-weight: bold;
+    color: #6b5b4a;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 65%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    background-color: #f7f7f7;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* ボタンのスタイル */
+button {
+    background-color: #8b5e3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+button:hover {
+    background-color: #70482c;
+}
+
+/* エラーメッセージのスタイル */
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group label,
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+    }
+
+    button {
+        align-self: center;
+    }
+}
